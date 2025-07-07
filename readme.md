@@ -23,7 +23,8 @@ This project is a basic CRUD REST API built with Spring Boot and Java 19, design
 
 ## 📦 Package Structure
 
-```cat.itacademy.s04.t02.n03
+```
+cat.itacademy.s04.t02.n01
 ├── controllers
 ├── model
 ├── services
