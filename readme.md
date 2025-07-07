@@ -23,24 +23,20 @@ This project is a basic CRUD REST API built with Spring Boot and Java 19, design
 
 ## 📦 Package Structure
 
-cat.itacademy.s04.t02.n01.controllers cat.itacademy.s04.t02.n01.model cat.itacademy.s04.t02.n01.services cat.itacademy.s04.t02.n01.repository cat.itacademy.s04.t02.n01.exception
+```cat.itacademy.s04.t02.n03
+├── controllers
+├── model
+├── services
+├── repository
+└── exception
 
-
-## 🍍 Entity: Fruit
-
-```java
-public class Fruit {
-    private int id;
-    private String name;
-    private int quantityKilos;
-}
-
+```
 ## 🔧 API Endpoints
 
-### 🟢 POST → `/fruita/add`
+### 🟢 `POST` → `/fruita/add`
 _Adds a new fruit to the database._
 
-json
+```json
 {
   "name": "Strawberry",
   "quantityKilos": 10
@@ -67,29 +63,37 @@ Example: /fruita/getOne/5
 📄 GET → /fruita/getAll
 Returns a list of all fruits stored.
 
-##  📚 Resources Used
+```
+
+### 📚 Resources Used
+
 Spring Boot with H2 Database
 
 ResponseEntity in Spring
 
-🛡️ Error Handling
+### 🛡️ Error Handling
+
 All errors are managed through a custom GlobalExceptionHandler, which returns consistent JSON responses for exceptions like:
 
-Entity not found
+Entity not found ❌
 
-Invalid input data
+Invalid input data 📛
 
-Duplicate entries
+Duplicate entries ♻️
 
-📖 Swagger UI
+### 📖 Swagger UI
+
 You can explore and test the API using Swagger at:
 
-http://localhost:8080/swagger-ui/index.html
+🔗 http://localhost:8080/swagger-ui/index.html
+
 Swagger is powered by Springdoc OpenAPI and automatically generates documentation based on your controller methods.
 
-🧪 How to Run
+### 🧪 How to Run
+Run the application:
+
 bash
 ./gradlew bootRun
 Access H2 console:
 
-http://localhost:8080/h2-console
+🔗 http://localhost:8080/h2-console
