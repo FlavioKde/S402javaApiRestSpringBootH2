@@ -35,14 +35,39 @@ public class Fruit {
     private int quantityKilos;
 }
 
-🔧 API Endpoints
-Method	URL	Description
-POST	/fruita/add	Add a new fruit
-PUT	/fruita/update	Update a fruit
-DELETE	/fruita/delete/{id}	Delete by ID
-GET	/fruita/getOne/{id}	Get one by ID
-GET	/fruita/getAll	Get all fruits
-📚 Resources Used
+## 🔧 API Endpoints
+
+### 🟢 POST → `/fruita/add`
+_Adds a new fruit to the database._
+
+```json
+{
+  "name": "Strawberry",
+  "quantityKilos": 10
+}
+🟡 PUT → /fruita/update
+Updates an existing fruit based on its ID.
+
+json
+{
+  "id": 3,
+  "name": "Apple",
+  "quantityKilos": 15
+}
+🔴 DELETE → /fruita/delete/{id}
+Deletes a fruit by its ID.
+
+Example: /fruita/delete/2
+
+🔍 GET → /fruita/getOne/{id}
+Returns a single fruit by its ID.
+
+Example: /fruita/getOne/5
+
+📄 GET → /fruita/getAll
+Returns a list of all fruits stored.
+
+##  📚 Resources Used
 Spring Boot with H2 Database
 
 ResponseEntity in Spring
