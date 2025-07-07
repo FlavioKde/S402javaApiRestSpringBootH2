@@ -40,7 +40,7 @@ public class Fruit {
 ### 🟢 POST → `/fruita/add`
 _Adds a new fruit to the database._
 
-```json
+json
 {
   "name": "Strawberry",
   "quantityKilos": 10
